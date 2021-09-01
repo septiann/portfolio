@@ -27,7 +27,7 @@
     }
 
     .wrapper {
-        padding: 10px 30px;
+        padding: 5px 30px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -37,9 +37,16 @@
             align-items: center;
 
             .logo {
+                font-size: 30px;
+                font-weight: 700;
+                color: $primaryColor;
                 text-decoration: none;
-                margin: 0 40px;
-                padding: 0px 30px;
+                margin-right: 40px;
+                display: flex;
+
+                img {
+                    width: 60px;
+                }
             }
             
             .itemContainer {
