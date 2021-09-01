@@ -1,0 +1,137 @@
+@import "../../global.scss";
+
+@include mobile {
+    .intro {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .left {
+            padding-top: 20px !important;
+            
+            .imgContainer {
+                height: 100% !important;
+
+                img {
+                    height: 100% !important;
+                }
+            }
+        }
+
+        .right {
+            .wrapper {
+                padding-left: 0 !important;
+                align-items: center !important;
+                height: 90% !important;
+
+                h1 {
+                    font-size: 40px !important;
+                }
+
+                h2 {
+                    font-size: 25px !important;
+                }
+
+                h3 {
+                    font-size: 20px !important;
+                }
+            }
+
+            a {
+                left: 0 !important;
+                display: flex !important;
+                justify-content: center !important;
+                width: 100% !important;
+                text-align: center !important;
+            }
+        }
+    }
+}
+
+.intro {
+    background-color: $fourthColor;
+    display: flex;
+
+    .left {
+        flex: 0.5;
+        overflow: hidden;
+
+        .imgContainer {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            float: right;
+
+            img {
+                height: 80%;
+            }
+        }
+    }
+
+    .right {
+        flex: 0.5;
+        color: $primaryColor;
+        position: relative;
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 60px;
+                margin: 10px 0;
+            }
+
+            h2 {
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 30px;
+                height: 37px;
+
+                span {
+                    font-family: 'Fira Code', monospace;
+                    font-size: inherit;
+                    color: $secondaryColor;
+                }
+
+                .ityped-cursor {
+                    animation: blink 1s infinite;
+                }
+
+                @keyframes blink {
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        a {
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+
+            img {
+                width: 30px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

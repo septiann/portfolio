@@ -1,0 +1,100 @@
+@import "../../global.scss";
+
+@include mobile {
+    .portfolio {
+        justify-content: normal !important;
+
+        h1 {
+            font-size: 30px !important;
+            margin-bottom: 15px !important;
+            padding-top: 20px !important;
+        }
+
+        ul {
+            margin: 10px 0 !important;
+            flex-wrap: wrap !important;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100% !important;
+            padding-top: 20px !important;
+
+            .item {
+                width: 130px !important;
+                height: 100px !important;
+
+                h3 {
+                    font-size: 15px !important;
+                }
+            }
+        }
+    }
+}
+
+.portfolio {
+    background-color: $fourthColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $primaryColor;
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .container {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .item {
+            width: 220px;
+            height: 150px;
+            border-radius: 20px;
+            border: 1px solid $thirdColor;
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $fourthColor;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+
+            h3 {
+                position: absolute;
+                font-size: 20px;
+                color: $primaryColor;
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+            }
+
+            &:hover {
+                background-color: $thirdColor;
+
+                img {
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}
