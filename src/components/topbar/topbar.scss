@@ -2,6 +2,8 @@
 
 @include mobile {
     .topbar {
+        -webkit-box-flex: inherit;
+
         .wrapper {
             .left {
                 .itemContainer {
@@ -46,6 +48,7 @@
 
                 img {
                     width: 60px;
+                    height: 60px;
                 }
             }
             

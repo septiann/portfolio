@@ -8,7 +8,7 @@ $black: black;
 $width: 768px;
 
 @mixin mobile {
-    @media (max-width: #{$width}) {
+    @media (max-width: $width) {
         @content
     }
 }
