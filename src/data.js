@@ -42,26 +42,25 @@ export const webPortfolio = [
       id: 1,
       title: "InnCation Web App",
       img: "./assets/project1.png",
+      link: "https://inncation.herokuapp.com/"
     },
     {
       id: 2,
       title: "InnCation Admin Web App",
-      img: "./assets/project3.png"
+      img: "./assets/project3.png",
+      link: "https://backend-inncation.herokuapp.com/admin/login"
     },
     {
       id: 3,
       title: "7Tech",
-      img: "./assets/project2.jpg"
+      img: "./assets/project2.jpg",
+      link: "#"
     },
     {
       id: 4,
-      title: "BantuBantu",
-      img: "./assets/project4.png"
-    },
-    {
-      id: 5,
-      title: "Bazgym Indonesia",
-      img: "./assets/project5.png"
+      title: "BRIght On 2021",
+      img: "./assets/project6.png",
+      link: "https://www.brighton2021.com/"
     }
 ];
   
