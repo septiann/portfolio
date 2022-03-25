@@ -46,9 +46,9 @@ export const webPortfolio = [
     },
     {
       id: 2,
-      title: "InnCation Admin Web App",
-      img: "./assets/project3.png",
-      link: "https://backend-inncation.herokuapp.com/admin/login"
+      title: "BantuBantu",
+      img: "./assets/project4.png",
+      link: "https://bantubantu.co.id/"
     },
     {
       id: 3,
@@ -61,6 +61,36 @@ export const webPortfolio = [
       title: "BRIght On 2021",
       img: "./assets/project6.png",
       link: "https://www.brighton2021.com/"
+    },
+    {
+      id: 5,
+      title: "HP Partner Summit 2022",
+      img: "./assets/project7.png",
+      link: "https://hpidpartnersummit2022.com/"
+    },
+    {
+      id: 6,
+      title: "Dough Lab",
+      img: "./assets/project8.png",
+      link: "https://doughlab.com/"
+    },
+    {
+      id: 7,
+      title: "Joint Convex Bandung",
+      img: "./assets/project9.png",
+      link: "https://www.jointconvex.or.id/"
+    },
+    {
+      id: 8,
+      title: "Rakernas Bank Syariah Indonesia 2022",
+      img: "./assets/project10.png",
+      link: "#"
+    },
+    {
+      id: 9,
+      title: "BazGym Indonesia",
+      img: "./assets/project5.png",
+      link: "https://bazgym-indo.com/"
     }
 ];
   

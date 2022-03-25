@@ -30,7 +30,7 @@ export default function Portfolio() {
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
-            <ul>
+            <ul style={{ display: 'none' }}>
                 {list.map(item => (
                     <PortfolioList key={item.id} title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id} />
                 ))}
